@@ -8,7 +8,7 @@
   `(html (:princ (concatenate 'string "<?php " ,php-statement "; ?>"))))
 
 (html-file-page
-    ("php-hearbeat" :format :html5 :encoding :utf-8)
+    ("php-heartbeat" :format :html5 :encoding :utf-8)
   (html
    (:head
     (:title "PHP Heartbeat"))
