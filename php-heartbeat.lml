@@ -8,14 +8,14 @@
   `(html (:princ (concatenate 'string "<?php " ,php-statement "; ?>"))))
 
 (html-file-page
- ("php-hearbeat" :format :html5 :encoding :utf-8)
- (html
-  (:head
-   (:title "PHP Heartbeat"))
-  (:body
-   (:center
-    (:h1
-     (:php "echo \"$_SERVER['HTTP_HOST']@$_SERVER['SERVER_ADDR']\"")))
+    ("php-hearbeat" :format :html5 :encoding :utf-8)
+  (html
+   (:head
+    (:title "PHP Heartbeat"))
+   (:body
+    (:center
+     (:h1
+      (:php "echo $_SERVER['HTTP_HOST'] . '@' . $_SERVER['SERVER_ADDR']")))
+    )
    )
   )
- )
